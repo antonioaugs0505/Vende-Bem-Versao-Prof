@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6686444-B2B2-5D3B-47AF-03C90802BC25" name="TB_PEDIDO">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:55:52 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PEDIDO" id="0C21BD2F-EFF6-4A95-ECB2-F68921750EA5">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:56:11 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NUMERO DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IN_PEDIDO" id="E505F6C5-7046-96CC-A418-60C7B29DB3FC">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:57:07 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO ATENDIMENTO  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ATEND" id="EC468EFB-78E1-A4F4-DB77-E55FFEABB43D">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:57:23 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NOME DO ATENDENTE  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PGTO" id="37CF7800-C84C-D2AA-5822-6F505CAFF0DE">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:58:06 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO TIPO DE PAGAMENTO  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CLIENTE" id="34FD403A-1BE7-45AA-4C9B-88F785307A89">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:17:37 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO  CLIENTE DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_QTDE" id="4F2C1C8C-6283-45CF-E2B0-4DCF04B6BE87">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:18:19 UTC</createdTime>
+<comment><![CDATA[REFERENTE A QUANTIDADE DE PESSOAS  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FM_PEDIDO" id="9CECBE47-4553-DB21-DEE6-350E029C8530">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:19:40 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO FECHAMENTO  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFE18912-8455-7C8E-FC29-94783C564B97" name="TB_PEDIDO PK">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:57:04 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C21BD2F-EFF6-4A95-ECB2-F68921750EA5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

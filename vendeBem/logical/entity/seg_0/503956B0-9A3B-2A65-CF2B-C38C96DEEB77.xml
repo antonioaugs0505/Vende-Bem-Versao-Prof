@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="503956B0-9A3B-2A65-CF2B-C38C96DEEB77" name="TB_PRODUTO">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:21:56 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PRODUTO" id="007FF5D3-8B4F-FF41-D0FC-9C2C52B542CA">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:22:04 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO CODIGO DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_PRODUTO" id="47CCD2A3-A8DF-4E18-19D8-002956E9C043">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:22:55 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NOME  DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CN_QTDE" id="46911C51-3DB9-28D7-1D96-162E2FC96746">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:24:05 UTC</createdTime>
+<comment><![CDATA[REFERENTE A QUANTIDADE CONSUMIDA DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PRODUTO" id="84729E15-B31A-BCD6-D6A8-E763AD89FBD2">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:25:07 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO TIPO DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UN_PRECO" id="A27511E3-C7CA-5866-6CDE-69CBACCF8488">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:26:25 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO PREÇO UNITARIO  DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_TOTAL" id="DCEF74CD-0F80-C600-9C98-5FE77081D3DC">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:27:19 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO VALOR TOTAL DA VENDA DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_DESC" id="09B48388-6E37-01A4-25EE-AAD687251CD8">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:27:54 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO VALOR TOTAL DO DESCONTO  DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_GERAL" id="0CD3DEB7-122D-34FE-6E55-F7BFBFFF1222">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:28:26 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO VALOR TOTAL GERAL  DO PRODUTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="059CB369-3851-7648-ED1E-7191FDA69531" name="TB_PRODUTO PK">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:22:12 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>007FF5D3-8B4F-FF41-D0FC-9C2C52B542CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
